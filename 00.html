@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contect gym</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlede6cCiKZUrMbps6xR6lDnas-qxfsUTfFg&s"
+      type="images"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+      }
+
+      .navbar .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ff6b00;
+      }
+
+      .navbar .nav-links a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.2rem;
+        transition: all 0.3s;
+      }
+
+      .navbar .nav-links a:hover {
+        color: #ff6b00;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .contact-wrapper {
+        display: flex;
+        gap: 50px;
+      }
+
+      .contact-form {
+        flex: 1;
+      }
+
+      .contact-info {
+        flex: 1;
+        background-color: #333;
+        padding: 30px;
+        border-radius: 10px;
+        color: white;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      button {
+        background-color: orangered;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: orangered;
+      }
+
+      .contact-info h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      .info-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .info-item i {
+        margin-left: 10px;
+        font-size: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .contact-wrapper {
+          flex-direction: column;
+        }
+      }
+      footer {
+        background: #333;
+        color: white;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .social-links {
+        margin-top: 20px;
+      }
+
+      .social-links a {
+        color: white;
+        margin: 0 10px;
+        font-size: 1.5rem;
+      }
+    </style>
+    <!-- رابط أيقونات Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">IronX GYM</div>
+      <div class="nav-links">
+        <a href="s01.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> about </a>
+        <a href="services.html"><i class="fas fa-dumbbell"></i>Workout</a>
+        <a href="00.html"><i class="fas fa-envelope"></i>contact Us</a>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>call us</h1>
+
+      <div class="contact-wrapper">
+        <!-- نموذج الاتصال -->
+        <form class="contact-form" method="POST" action="send.php">
+          <div class="form-group">
+            <label for="name"> full name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email"> Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">phone number:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">the messsage:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit">send message</button>
+        </form>
+
+        <!-- معلومات الاتصال -->
+        <div class="contact-info">
+          <h2>contact info</h2>
+
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>address:<br />123 fitness street, batna, Algeria</p>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p>+966 24 172 2804</p>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>
+              Email:<br />
+              IronXgym@gmail.com
+            </p>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <p>
+              working hours:<br />
+              11pm-06am (everyday)
+            </p>
+          </div>
+
+          <div class="map">
+            <!-- يمكن إضافة خريطة جوجل هنا -->
+            <iframe
+              src="https://maps.google.com/maps?q=...&output=embed"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>© 2025 IronX GYM - جميع الحقوق محفوظة</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

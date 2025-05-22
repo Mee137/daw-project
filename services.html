@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IronX GYM services</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlede6cCiKZUrMbps6xR6lDnas-qxfsUTfFg&s"
+      type="images"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        color: #333;
+        text-align: center;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+      }
+
+      .navbar .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ff6b00;
+      }
+
+      .navbar .nav-links a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.2rem;
+        transition: all 0.3s;
+      }
+
+      .navbar .nav-links a:hover {
+        color: #ff6b00;
+      }
+
+      .services-header {
+        background: url("https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80")
+          no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 60px;
+      }
+
+      .services-header::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .services-header h1 {
+        color: white;
+        font-size: 3rem;
+        z-index: 1;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .services-container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 20px;
+      }
+
+      .services-intro {
+        margin-bottom: 50px;
+        text-align: right;
+      }
+
+      .services-intro h2 {
+        color: #ff6b00;
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .services-intro p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .service-card {
+        background: #f8f9fa;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        text-align: right;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .service-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .service-content {
+        padding: 20px;
+      }
+
+      .service-content h3 {
+        color: #ff6b00;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+      }
+
+      .service-content p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+
+      .price {
+        font-weight: bold;
+        color: #333;
+        font-size: 1.2rem;
+      }
+
+      footer {
+        background: #333;
+        color: white;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .social-links a {
+        color: white;
+        margin: 0 10px;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">IronX GYM</div>
+      <div class="nav-links">
+        <a href="s01.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> about </a>
+        <a href="services.html"><i class="fas fa-dumbbell"></i>Workout</a>
+        <a href="00.html"><i class="fas fa-envelope"></i>contact Us</a>
+      </div>
+    </nav>
+    <header class="services-header">
+      <h1>our services</h1>
+    </header>
+
+    <main class="services-container">
+      <section class="services-intro">
+        <h2>اكتشف برامجنا المتكاملة</h2>
+        <p>
+          في IronX GYM نقدم مجموعة واسعة من الخدمات المصممة خصيصاً لتلبية
+          احتياجاتك الرياضية والصحية. سواء كنت مبتدئاً أو محترفاً، لدينا
+          البرنامج المناسب لك.
+        </p>
+      </section>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+            alt="تدريب شخصي"
+          />
+          <div class="service-content">
+            <h3>تدريب شخصي</h3>
+            <p>
+              برامج تدريبية فردية مع مدرب خاص لتحقيق أهدافك في أسرع وقت وبأفضل
+              النتائج.
+            </p>
+            <p class="price">السعر: 800 دج/الجلسة</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+            alt="تمارين جماعية"
+          />
+          <div class="service-content">
+            <h3>تمارين جماعية</h3>
+            <p>
+              جلسات تدريبية جماعية ممتعة مع مدربين محترفين في مختلف التخصصات
+              الرياضية.
+            </p>
+            <p class="price">السعر: 500 دج/الجلسة</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1495555687398-3f50d6e79e1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+            alt="برامج تغذية"
+          />
+          <div class="service-content">
+            <h3>برامج تغذية</h3>
+            <p>
+              خطط تغذية شخصية مصممة من قبل أخصائيين تغذية معتمدين لتحقيق أهدافك
+              الصحية.
+            </p>
+            <p class="price">السعر: 1500 دج/الشهر</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+            alt="عضوية شهرية"
+          />
+          <div class="service-content">
+            <h3>عضوية شهرية</h3>
+            <p>
+              استمتع بكامل مرافق الصالة بدون قيود مع العضوية الشهرية الكاملة.
+            </p>
+            <p class="price">السعر: 5000 دج/الشهر</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="تدريب متقدم"
+          />
+          <div class="service-content">
+            <h3>تدريب متقدم</h3>
+            <p>
+              برامج متخصصة للمحترفين والرياضيين الذين يسعون لتحقيق أعلى
+              المستويات.
+            </p>
+            <p class="price">السعر: 1200 دج/الجلسة</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+            alt="جلسات مساج"
+          />
+          <div class="service-content">
+            <h3>جلسات مساج</h3>
+            <p>
+              جلسات مساج علاجية وتجميلية مع أخصائيين معتمدين لاستعادة النشاط
+              والحيوية.
+            </p>
+            <p class="price">السعر: 1800 دج/الجلسة</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 IronX GYM - جميع الحقوق محفوظة</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
